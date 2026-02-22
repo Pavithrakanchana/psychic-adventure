@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+
+<body>
+    <p id="para1">para 1</p>
+    <p id="para2">para 2</p>
+    <p>para 3</p>
+
+    <script>
+        console.log(document.getElementById('para1').innerHTML);
+        document.getElementById('para1').innerHTML = 'Para1 modified';
+        console.log(document.getElementById('para1').innerHTML);
+        document.getElementById('para2').innerHTML = '<b>Para2 modified</b>';
+
+    </script>
+</body>
+
+</html>
